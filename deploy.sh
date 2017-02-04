@@ -5,7 +5,7 @@ echo "Building assets..."
 
 cd web
 pwd
-npm run build
+npm run build-docs
 
 echo "Copying assets..."
 
