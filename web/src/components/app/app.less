@@ -1,0 +1,65 @@
+
+
+html,
+body,
+#mount-point {
+    height: 100%;
+    margin:0;
+    padding:0;
+    font-family: 'Heebo', sans-serif;
+    overflow-y: hidden;
+}
+
+
+html,
+body,
+input,
+textarea,
+button {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+.app {
+    height: 100%;
+    background-color: #293F50;
+
+    .slide {
+        z-index: 1001;
+        height: 100%;
+        display: flex;
+        justify-content: center; /* align horizontal */
+        align-items: center;
+        text-align: center;
+        color: #648880;
+        font-weight: 300;
+        opacity: 0;
+        left: 45em;
+        position: relative;
+        animation: slide .7s forwards;
+        animation-timing-function: ease;
+      
+        .sub-header {
+            padding-bottom: 30px;
+        }
+
+        h2 {
+                color:#648880;
+                font-size: 3.0em;
+                font-weight: 100;
+            }
+    }
+
+    h2.highlighted {
+        color: #fff;
+        font-weight: 300;
+    }
+
+    @keyframes slide {
+        100% { 
+            left: 0;
+            opacity: 1 
+        }
+    }
+}

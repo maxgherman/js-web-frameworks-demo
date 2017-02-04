@@ -1,1 +1,8 @@
-/node_modules
+web/.eslintcache
+web/node_modules/
+web/www/*
+!web/www/hyperTextPart1.src
+!web/www/hyperTextPart2.src
+!web/www/demo.css
+!web/www/demo.jsx
+.vscode
