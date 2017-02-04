@@ -6,3 +6,4 @@ web/www/*
 !web/www/demo.css
 !web/www/demo.jsx
 .vscode
+build
