@@ -49,13 +49,31 @@ class Slide1 extends Component {
                 });
     }
 
+    renderQuote() {
+        return (
+        <div className="quote">
+            <blockquote cite="https://medium.com/bumpers/isnt-our-code-just-the-best-f028a78f33a9#.dc2tixes5">
+                I hate frameworks. A lot.
+                <br/>
+                I also hate not having a framework, and anyone who “rolls” their own “framework”.
+            </blockquote>
+            <span className="author">
+                -fat https://medium.com/bumpers/isnt-our-code-just-the-best-f028a78f33a9#.dc2tixes5
+            </span>
+        </div>);
+    }
+
     render() {
         
         return (
             <div className="slide slide-1">
                 <section>
                     <h2 className="sub-header">Why?</h2>
-                    {this.renderItems(this.state.step)}
+                    <div>
+                        {this.state.step < 5 ? 
+                            this.renderItems(this.state.step) :
+                            this.renderQuote()}
+                    </div>
                 </section>
              </div>);
     }

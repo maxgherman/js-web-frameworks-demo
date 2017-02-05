@@ -1,5 +1,5 @@
 const value = `
-    var state = 'state';
+    let state = 'state';
 
     function getter() {
         return state;
@@ -10,7 +10,7 @@ const value = `
     }
 
     function action() {
-        var value = getter();
+        let value = getter();
         document.getElementById('placeholder').innerHTML = value;
     }
     
@@ -30,7 +30,13 @@ const value = `
      
      
         db.SaveChanges();
-    }`;
+    }
+    
+    
+    
+    
+    
+    `;
 
 
 export default value;
