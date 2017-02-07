@@ -20,6 +20,9 @@ const Title = () => (
         <footer className="mui-container">
             <div className="author">
                 <h3>Max Gherman<br/>Senior Engineer, Readify</h3>
+                <a href="https://github.com/maxgherman/js-web-frameworks-demo">
+                    <img src={Images.repo}></img>
+                </a>
             </div>
             <div className="logo">
                 <img src={Images.logo}></img>
